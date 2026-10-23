@@ -1,0 +1,14 @@
+{
+  "finding_id": "2026-10-20#vol-example#UNATTACHED_VOLUME",
+  "resource_id": "vol-example",
+  "rule_id": "UNATTACHED_VOLUME",
+  "severity": "MEDIUM",
+  "analysis_date": "2026-10-20",
+  "evidence": {
+    "daily_cost_usd": 2.0,
+    "days_unattached": 10,
+    "retention_required": false
+  },
+  "recommended_action": "This volume looks unused. Confirm with the owner before deleting it.",
+  "projected_monthly_savings_usd": 60.0
+}

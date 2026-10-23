@@ -1,0 +1,23 @@
+Illustrative example only. These resources are not in the provided dataset.
+Your wording and layout can differ; the content should be the same.
+
+CostObserver triage report for 2026-10-20
+
+Resources analyzed : 12
+Resources affected : 2
+Findings           : CRITICAL 1 | HIGH 1 | MEDIUM 1
+Projected monthly avoidable cost: $60.00
+  (estimate, assuming current daily rates continue and owners approve the change)
+
+Needs attention first
+  [CRITICAL] db-example   EXPOSED_DATABASE_COST_SPIKE
+             Daily cost $90.00 vs 7-day average $30.00 while port 5432 is open to 0.0.0.0/0.
+             Investigate the cost increase and restrict access.
+  [HIGH]     db-example   PUBLIC_DATABASE
+             Port 5432 is open to 0.0.0.0/0. Restrict access to approved sources.
+  [MEDIUM]   vol-example  UNATTACHED_VOLUME
+             Unattached for 10 days at $2.00/day. Confirm with the owner before deleting.
+             Projected saving: $60.00/month
+
+Could not fully check
+  vol-missing  MISSING_METADATA  No metadata found for this resource.

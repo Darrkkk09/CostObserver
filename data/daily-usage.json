@@ -1,0 +1,117 @@
+{
+  "report_date": "2026-10-20",
+  "currency": "USD",
+  "records": [
+    {
+      "resource_id": "vol-0a11f3c9e2b4d5a61",
+      "resource_type": "ebs_volume",
+      "region": "ap-southeast-1",
+      "daily_cost_usd": 2.4,
+      "avg_daily_cost_7d_usd": 2.4
+    },
+    {
+      "resource_id": "vol-0a2b8e4f1c7d9a352",
+      "resource_type": "ebs_volume",
+      "region": "ap-southeast-1",
+      "daily_cost_usd": 1.1,
+      "avg_daily_cost_7d_usd": 1.1
+    },
+    {
+      "resource_id": "vol-0a3c5d7e9f1b2c483",
+      "resource_type": "ebs_volume",
+      "region": "ap-southeast-1",
+      "daily_cost_usd": 1.5,
+      "avg_daily_cost_7d_usd": 1.5
+    },
+    {
+      "resource_id": "vol-0a4d6e8f0a2c3d594",
+      "resource_type": "ebs_volume",
+      "region": "us-east-1",
+      "daily_cost_usd": 3.0,
+      "avg_daily_cost_7d_usd": 3.0
+    },
+    {
+      "resource_id": "vol-0a5e7f9a1b3d4e6a5",
+      "resource_type": "ebs_volume",
+      "region": "us-east-1",
+      "daily_cost_usd": 4.0,
+      "avg_daily_cost_7d_usd": 3.9
+    },
+    {
+      "resource_id": "vol-0a6f8a0b2c4e5f7b6",
+      "resource_type": "ebs_volume",
+      "region": "ap-southeast-1",
+      "daily_cost_usd": 0.9,
+      "avg_daily_cost_7d_usd": 0.9
+    },
+    {
+      "resource_id": "vol-0a7a9b1c3d5f6a8c7",
+      "resource_type": "ebs_volume",
+      "region": "us-east-1",
+      "daily_cost_usd": 0.0,
+      "avg_daily_cost_7d_usd": 0.0
+    },
+    {
+      "resource_id": "vol-0b1c2d3e4f5a6b7d8",
+      "resource_type": "ebs_volume",
+      "region": "ap-southeast-1",
+      "daily_cost_usd": 1.75,
+      "avg_daily_cost_7d_usd": 1.75
+    },
+    {
+      "resource_id": "db-orders-prod",
+      "resource_type": "rds_database",
+      "region": "ap-southeast-1",
+      "daily_cost_usd": 96.0,
+      "avg_daily_cost_7d_usd": 30.0
+    },
+    {
+      "resource_id": "db-analytics",
+      "resource_type": "rds_database",
+      "region": "ap-southeast-1",
+      "daily_cost_usd": 40.0,
+      "avg_daily_cost_7d_usd": 20.0
+    },
+    {
+      "resource_id": "db-reporting",
+      "resource_type": "rds_database",
+      "region": "us-east-1",
+      "daily_cost_usd": 18.0,
+      "avg_daily_cost_7d_usd": 0.0
+    },
+    {
+      "resource_id": "db-billing-prod",
+      "resource_type": "rds_database",
+      "region": "ap-southeast-1",
+      "daily_cost_usd": 120.0,
+      "avg_daily_cost_7d_usd": 40.0
+    },
+    {
+      "resource_id": "db-legacy-crm",
+      "resource_type": "rds_database",
+      "region": "us-east-1",
+      "daily_cost_usd": 22.0,
+      "avg_daily_cost_7d_usd": 21.5
+    },
+    {
+      "resource_id": "db-staging",
+      "resource_type": "rds_database",
+      "region": "ap-southeast-1",
+      "daily_cost_usd": 12.0
+    },
+    {
+      "resource_id": "i-0c1d2e3f4a5b6c7d8",
+      "resource_type": "ec2_instance",
+      "region": "ap-southeast-1",
+      "daily_cost_usd": 14.4,
+      "avg_daily_cost_7d_usd": 14.1
+    },
+    {
+      "resource_id": "s3-app-logs",
+      "resource_type": "s3_bucket",
+      "region": "ap-southeast-1",
+      "daily_cost_usd": 0.62,
+      "avg_daily_cost_7d_usd": 0.6
+    }
+  ]
+}

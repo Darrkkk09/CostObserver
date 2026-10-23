@@ -1,0 +1,33 @@
+
+CostObserver triage report for 2026-10-20
+
+Resources analyzed : 16
+Resources affected : 7
+Findings           : CRITICAL 1 | HIGH 4 | MEDIUM 2
+Projected monthly avoidable cost: $105.00
+  (estimate, assuming current daily rates continue and owners approve the change)
+
+Needs attention first
+  [CRITICAL] db-orders-prod EXPOSED_DATABASE_COST_SPIKE
+             Flagged for investigation: high bill anomaly detected on internet-exposed database.
+  [HIGH    ] db-analytics   PUBLIC_DATABASE
+             Database port is open to the public internet (0.0.0.0/0).
+  [HIGH    ] db-legacy-crm  PUBLIC_DATABASE
+             Database port is open to the public internet (0.0.0.0/0).
+  [HIGH    ] db-reporting   PUBLIC_DATABASE
+             Database port is open to the public internet (0.0.0.0/0).
+  [HIGH    ] db-staging     PUBLIC_DATABASE
+             Database port is open to the public internet (0.0.0.0/0).
+  [MEDIUM  ] vol-0a11f3c9e2b4d5a61 UNATTACHED_VOLUME
+             This disk looks unused. Please confirm with the owner before deleting it.
+             Projected saving: $72.00/month
+  [MEDIUM  ] vol-0a2b8e4f1c7d9a352 UNATTACHED_VOLUME
+             This disk looks unused. Please confirm with the owner before deleting it.
+             Projected saving: $33.00/month
+
+Could not fully check
+  vol-0a6f8a0b2c4e5f7b6 MISSING_FIELD        Missing 'retention_required' field on unattached volume.
+  vol-0b1c2d3e4f5a6b7d8 MISSING_METADATA     No metadata found for this resource.
+  db-reporting BASELINE_UNAVAILABLE 7-day average daily cost is missing or zero.
+  db-staging   BASELINE_UNAVAILABLE 7-day average daily cost is missing or zero.
+

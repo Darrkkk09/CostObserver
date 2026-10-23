@@ -1,0 +1,29 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor and history directories
+.history/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local state files and archives
+processed_runs.json
+*.zip
+.DS_Store
+.env

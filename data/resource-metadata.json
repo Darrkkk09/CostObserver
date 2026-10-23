@@ -1,0 +1,138 @@
+[
+  {
+    "resource_id": "vol-0a11f3c9e2b4d5a61",
+    "resource_type": "ebs_volume",
+    "environment": "dev",
+    "owner": "platform-team",
+    "attachment_state": "unattached",
+    "unattached_since": "2026-10-08",
+    "retention_required": false
+  },
+  {
+    "resource_id": "vol-0a2b8e4f1c7d9a352",
+    "resource_type": "ebs_volume",
+    "environment": "dev",
+    "owner": "data-team",
+    "attachment_state": "unattached",
+    "unattached_since": "2026-10-13",
+    "retention_required": false
+  },
+  {
+    "resource_id": "vol-0a3c5d7e9f1b2c483",
+    "resource_type": "ebs_volume",
+    "environment": "staging",
+    "owner": "platform-team",
+    "attachment_state": "unattached",
+    "unattached_since": "2026-10-14",
+    "retention_required": false
+  },
+  {
+    "resource_id": "vol-0a4d6e8f0a2c3d594",
+    "resource_type": "ebs_volume",
+    "environment": "prod",
+    "owner": "finance-team",
+    "attachment_state": "unattached",
+    "unattached_since": "2026-09-20",
+    "retention_required": true
+  },
+  {
+    "resource_id": "vol-0a5e7f9a1b3d4e6a5",
+    "resource_type": "ebs_volume",
+    "environment": "prod",
+    "owner": "platform-team",
+    "attachment_state": "attached",
+    "attached_to": "i-0c1d2e3f4a5b6c7d8",
+    "retention_required": false
+  },
+  {
+    "resource_id": "vol-0a6f8a0b2c4e5f7b6",
+    "resource_type": "ebs_volume",
+    "environment": "dev",
+    "owner": "ml-team",
+    "attachment_state": "unattached",
+    "unattached_since": "2026-09-30"
+  },
+  {
+    "resource_id": "vol-0a7a9b1c3d5f6a8c7",
+    "resource_type": "ebs_volume",
+    "environment": "dev",
+    "owner": "ml-team",
+    "attachment_state": "unattached",
+    "unattached_since": "2026-10-05",
+    "retention_required": false
+  },
+  {
+    "resource_id": "db-orders-prod",
+    "resource_type": "rds_database",
+    "environment": "prod",
+    "owner": "orders-team",
+    "engine": "postgres",
+    "database_port": 5432,
+    "inbound_rules": [
+      { "port": 5432, "cidr": "0.0.0.0/0" },
+      { "port": 5432, "cidr": "10.0.0.0/16" }
+    ]
+  },
+  {
+    "resource_id": "db-analytics",
+    "resource_type": "rds_database",
+    "environment": "prod",
+    "owner": "data-team",
+    "engine": "mysql",
+    "database_port": 3306,
+    "inbound_rules": [{ "port": 3306, "cidr": "0.0.0.0/0" }]
+  },
+  {
+    "resource_id": "db-reporting",
+    "resource_type": "rds_database",
+    "environment": "staging",
+    "owner": "data-team",
+    "engine": "postgres",
+    "database_port": 5432,
+    "inbound_rules": [{ "port": 5432, "cidr": "0.0.0.0/0" }]
+  },
+  {
+    "resource_id": "db-billing-prod",
+    "resource_type": "rds_database",
+    "environment": "prod",
+    "owner": "finance-team",
+    "engine": "postgres",
+    "database_port": 5432,
+    "inbound_rules": [{ "port": 5432, "cidr": "10.0.0.0/16" }]
+  },
+  {
+    "resource_id": "db-legacy-crm",
+    "resource_type": "rds_database",
+    "environment": "prod",
+    "owner": "sales-ops",
+    "engine": "mysql",
+    "database_port": 3306,
+    "inbound_rules": [
+      { "port": 443, "cidr": "0.0.0.0/0" },
+      { "port": 3306, "cidr": "10.20.0.0/16" }
+    ]
+  },
+  {
+    "resource_id": "db-staging",
+    "resource_type": "rds_database",
+    "environment": "staging",
+    "owner": "orders-team",
+    "engine": "postgres",
+    "database_port": 5432,
+    "inbound_rules": [{ "port": 5432, "cidr": "0.0.0.0/0" }]
+  },
+  {
+    "resource_id": "i-0c1d2e3f4a5b6c7d8",
+    "resource_type": "ec2_instance",
+    "environment": "prod",
+    "owner": "platform-team",
+    "instance_type": "m6i.large"
+  },
+  {
+    "resource_id": "s3-app-logs",
+    "resource_type": "s3_bucket",
+    "environment": "prod",
+    "owner": "platform-team",
+    "public_access_blocked": true
+  }
+]
